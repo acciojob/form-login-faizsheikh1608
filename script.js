@@ -1,15 +1,14 @@
-function getFormvalue(event) {
-    //Write your code here
-	 event.preventDefault();
+function getFormvalue() {
+  // Prevent the form from refreshing the page
+  event.preventDefault();
 
-  // Get the form element
-  const form = event.target;
+  // Get the form element by its ID
+  const form = document.getElementById('form1');
 
-  // Get the values of the first and last name fields
-  const firstName = form.fname.value.trim();
-  const lastName = form.lname.value.trim();
+  // Retrieve the values of the first and last name fields
+  const firstName = form.elements['fname'].value.trim();
+  const lastName = form.elements['lname'].value.trim();
 
   // Display the full name using alert
   alert(`${firstName} ${lastName}`);
-	});
 }
