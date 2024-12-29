@@ -1,4 +1,4 @@
-function getFormvalue() {
+function getFormvalue(event) {
   // Prevent the form from refreshing the page
   event.preventDefault();
 
