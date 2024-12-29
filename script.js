@@ -6,8 +6,8 @@ function getFormvalue(event) {
   const form = event.target;
 
   // Get the values of the first and last name fields
-  const firstName = form.firstname.value.trim();
-  const lastName = form.lastname.value.trim();
+  const firstName = form.fname.value.trim();
+  const lastName = form.lname.value.trim();
 
   // Display the full name using alert
   alert(`${firstName} ${lastName}`);
